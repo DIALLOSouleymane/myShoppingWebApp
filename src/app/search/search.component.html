@@ -1,0 +1,8 @@
+<!-- Changement du bgColor à orange si recherche : ngclass -->
+<div class="search-div" [ngClass]="{changeBackground: searchValue !=''}">
+    <span><b>Search:</b></span>
+    <!-- <input type="text" (input)="changeSearchValue($event)"> -->
+    <!-- Two way data binding : -->
+    <input type="text" [(ngModel)]="searchValue" (input)="onSearchTextChanged()">
+    <span *ngIf="searchValue != ''">You searche for: "{{ searchValue }}"</span>
+</div>
