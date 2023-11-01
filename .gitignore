@@ -2,7 +2,7 @@
 
 # Compiled output
 # Comment the line below to enable hosting from gitHub pages
-/dist 
+# /dist 
 /tmp
 /out-tsc
 /bazel-out
